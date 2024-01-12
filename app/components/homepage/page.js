@@ -95,8 +95,8 @@ const HomePage = () => {
           {/* <div className="head-width"> */}
           <div className="">
             <h1>
-              "Transforming Transformers: <span className="hi">Tashe,</span>
-              <br /> Your Partner in Quality and Innovation Since 2008"
+              Transforming Transformers: <span className="hi">Tashe,</span>
+              <br /> Your Partner in Quality and Innovation Since 2008
             </h1>
           </div>
           {/* </div> */}
