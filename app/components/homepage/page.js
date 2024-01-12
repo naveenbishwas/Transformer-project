@@ -92,31 +92,14 @@ const homePage = () => {
         </nav>
 
         <section className="header-heading">
-          <div className="head-width">
-            <div className="">
-              <h1>
-                <span className="hi">
-                  <span className="spin">
-                    <svg
-                      id="spin-star"
-                      width="70"
-                      height="70"
-                      viewBox="0 0 69 69"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M32.5096 7.59664C32.5096 11.7764 32.7418 18.9418 33.0404 23.5529C33.3058 28.1639 33.5048 31.9457 33.4385 32.012C33.3721 32.0784 30.6851 29.0928 27.4673 25.4438C24.2163 21.7615 19.3399 16.5202 16.5865 13.7668L13.0205 10.2008C12.2445 9.42482 10.9841 9.43223 10.2173 10.2173V10.2173V10.2173C9.43224 10.9841 9.42482 12.2445 10.2008 13.0205L13.7668 16.5865C16.5202 19.3399 21.7615 24.2163 25.4438 27.4673C31.7466 33.0072 32.0452 33.3389 31.1163 33.4385C30.5524 33.5048 26.7375 33.3058 22.5909 33.0404C18.4774 32.7418 11.6769 32.5096 7.53029 32.5096H1.99038C0.891125 32.5096 0 33.4007 0 34.5V34.5V34.5C0 35.5993 0.891127 36.4904 1.99039 36.4904H7.59663C11.7764 36.4904 18.9418 36.2582 23.5529 35.9596C28.1639 35.6942 31.9457 35.4952 32.012 35.5615C32.0784 35.6279 29.6236 37.8173 26.6048 40.4712C23.5529 43.125 18.2784 48.0346 14.8615 51.3851L10.0462 56.1235C9.26046 56.8968 9.24795 58.1599 10.0183 58.9486V58.9486V58.9486C10.7858 59.7344 12.0468 59.7439 12.8261 58.9697L16.487 55.3327C19.3067 52.5462 24.2163 47.2385 27.4673 43.5562C29.0803 41.7104 30.56 40.048 31.643 38.8573C32.8001 37.5851 33.444 37.8623 33.36 39.5799C33.2852 41.1071 33.1708 43.181 33.0404 45.4471C32.7418 50.0582 32.5096 57.2236 32.5096 61.4034V67.0096C32.5096 68.1089 33.4007 69 34.5 69V69V69C35.5993 69 36.4904 68.1089 36.4904 67.0096V61.4034C36.4904 57.2236 36.2582 50.0582 35.9596 45.4471C35.6942 40.8361 35.4952 37.0543 35.5615 36.988C35.6279 36.9216 37.8173 39.3764 40.4712 42.3952C43.125 45.4471 48.0346 50.7216 51.3851 54.1385L56.1236 58.9538C56.8968 59.7395 58.1599 59.752 58.9486 58.9817V58.9817V58.9817C59.7344 58.2142 59.7439 56.9532 58.9697 56.1739L55.3327 52.513C52.5462 49.6933 47.2385 44.7837 43.5562 41.5327C41.7104 39.9197 40.048 38.44 38.8573 37.357C37.5851 36.1999 37.8623 35.556 39.5799 35.64C41.1071 35.7148 43.181 35.8292 45.4471 35.9596C50.0582 36.2582 57.2236 36.4904 61.4034 36.4904H67.0096C68.1089 36.4904 69 35.5993 69 34.5V34.5V34.5C69 33.4007 68.1089 32.5096 67.0096 32.5096H61.4034C57.2236 32.5096 50.0582 32.7418 45.4471 33.0404C40.8361 33.3058 37.0543 33.5048 36.988 33.4385C36.9216 33.3721 39.3764 31.1827 42.3952 28.5288C45.4471 25.875 50.7216 20.9654 54.1385 17.6149L58.9538 12.8764C59.7395 12.1032 59.752 10.8401 58.9817 10.0514V10.0514V10.0514C58.2134 9.26485 56.9519 9.25331 56.1693 10.0257L52.4798 13.6673C49.6933 16.4538 44.7837 21.7615 41.5327 25.4438C39.9197 27.2896 38.44 28.952 37.357 30.1427C36.1999 31.4149 35.556 31.1377 35.64 29.4201C35.7148 27.8929 35.8292 25.819 35.9596 23.5529C36.2582 18.9418 36.4904 11.7764 36.4904 7.59664V1.99038C36.4904 0.891126 35.5993 0 34.5 0V0V0C33.4007 0 32.5096 0.891127 32.5096 1.99039V7.59664Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </span>
-                  Hi,
-                </span>
-                We're Tashe
-              </h1>
-            </div>
+          {/* <div className="head-width"> */}
+          <div className="">
+            <h1>
+              "Transforming Transformers: <span className="hi">Tashe,</span>
+              <br /> Your Partner in Quality and Innovation Since 2008"
+            </h1>
           </div>
+          {/* </div> */}
         </section>
 
         {/* <section className="header-advantage">
@@ -311,6 +294,55 @@ const homePage = () => {
           <div className="dot"></div>
         </section>
       </header>
+
+      <section className="we-made">
+        <h1
+          ref={weMadeHeading}
+          className={`${
+            isWeMadeHeadingVisible
+              ? "we-made-intersect-head"
+              : "we-made-heading"
+          }`}
+        >
+          What We <span id="red-made">Made</span>
+        </h1>
+        <div className="we-made-para">
+          <p
+            ref={paraOne}
+            id="made-para-one"
+            className={`${
+              isParaOneVisible ? "animation-para-one" : "tranfrom-made-paraone"
+            }`}
+          >
+            We manufacture Corrugated and conventional transformer tanks ranging
+            from 10KVA to 15MVA. Our tanks stand out due to their manufacturing
+            quality with highest dimensional accuracy and weld seam quality.
+          </p>
+
+          <p
+            ref={paraTwo}
+            id="made-para-two"
+            className={`${
+              isParaTwoVisible ? "animation-para-two" : "tranfrom-made-paratwo"
+            }`}
+          >
+            Various tank fitments like top covers, cable boxes, conservator are
+            made with highest accuracy and precise positioning. On request,
+            additional stainless steel plates can be added with guaranteed weld
+            joints.
+          </p>
+        </div>
+        <div className="we-made-btn">
+          <button
+            ref={paraBtn}
+            className={`${
+              isParaBtnVisible ? "animate__animated animate__rubberBand" : "a"
+            }`}
+          >
+            Read More
+          </button>
+        </div>
+      </section>
 
       <section className="typeof-fins">
         <div className="fins-heading">
@@ -993,55 +1025,6 @@ const homePage = () => {
         <div class="explore-tashe-two"></div>
       </div>
 
-      <section className="we-made">
-        <h1
-          ref={weMadeHeading}
-          className={`${
-            isWeMadeHeadingVisible
-              ? "we-made-intersect-head"
-              : "we-made-heading"
-          }`}
-        >
-          What We <span id="red-made">Made</span>
-        </h1>
-        <div className="we-made-para">
-          <p
-            ref={paraOne}
-            id="made-para-one"
-            className={`${
-              isParaOneVisible ? "animation-para-one" : "tranfrom-made-paraone"
-            }`}
-          >
-            We manufacture Corrugated and conventional transformer tanks ranging
-            from 10KVA to 15MVA. Our tanks stand out due to their manufacturing
-            quality with highest dimensional accuracy and weld seam quality.
-          </p>
-
-          <p
-            ref={paraTwo}
-            id="made-para-two"
-            className={`${
-              isParaTwoVisible ? "animation-para-two" : "tranfrom-made-paratwo"
-            }`}
-          >
-            Various tank fitments like top covers, cable boxes, conservator are
-            made with highest accuracy and precise positioning. On request,
-            additional stainless steel plates can be added with guaranteed weld
-            joints.
-          </p>
-        </div>
-        <div className="we-made-btn">
-          <button
-            ref={paraBtn}
-            className={`${
-              isParaBtnVisible ? "animate__animated animate__rubberBand" : "a"
-            }`}
-          >
-            Read More
-          </button>
-        </div>
-      </section>
-
       <section className="banner-text">
         <div className="banner-text-image">
           <img
@@ -1121,7 +1104,7 @@ const homePage = () => {
         </div>
       </section>
 
-      <section className="do-the-must">
+      {/* <section className="do-the-must">
         <div className="do-the-must-text">
           <svg
             className="do-must-text-star"
@@ -1153,7 +1136,6 @@ const homePage = () => {
             ></path>
           </svg>
         </div>
-
         <div className="count-cirlce">
           <div className="circle" id="c1">
             <div className="counts">
@@ -1197,8 +1179,7 @@ const homePage = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="circle-text-heading">
+        <div className="circle-text-heading">
           <div className="circle-text">
             <div className="circle-df-one">
               <div className="text-df-one">
@@ -1213,8 +1194,7 @@ const homePage = () => {
               </div>
             </div>
           </div>
-        </div> */}
-
+        </div>
         <div className="circle-star">
           <svg
             width="100%"
@@ -1229,9 +1209,9 @@ const homePage = () => {
             ></path>
           </svg>
         </div>
-      </section>
+      </section> */}
 
-      {/* <section className="everything-in-between">
+      <section className="everything-in-between">
         <h1 id="ever-green">
           And <span className="orange">everything</span> in
           <span className="green"> between</span>
@@ -1282,7 +1262,7 @@ const homePage = () => {
             </span>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* <section className="we-re-everyhting">
         <div className="sqyare-df">
@@ -1389,10 +1369,10 @@ const homePage = () => {
         </div>
       </section> */}
 
-      <section className="golder-ellipse">
+      {/* <section className="golder-ellipse">
         <div className="golder-rotate1"></div>
         <div className="golder-rotate2"></div>
-      </section>
+      </section> */}
 
       {/* <section className="what-we-done">
         <h1>
@@ -5236,7 +5216,7 @@ const homePage = () => {
       </section> */}
 
       <footer className="curious">
-        <h1 id="hide-cur">
+        {/* <h1 id="hide-cur">
           <span id="left">
             curious? <br />
           </span>
@@ -5281,10 +5261,10 @@ const homePage = () => {
           </span>
           <span className="orange">let's talk </span>
         </h1>
-        <p>explore your option</p>
-        <div className="explore-div">
+        <p>explore your option</p> */}
+        {/* <div className="explore-div">
           <hr className="explore" />
-        </div>
+        </div> */}
 
         <div className="footer-df1">
           <div className="footer-width">
@@ -5348,6 +5328,11 @@ const homePage = () => {
                     ></path>
                   </svg>
                 </div> */}
+
+                <div className="footer-search">
+                  <input type="email" name="" id="" placeholder="Email" />
+                  <button id="yellow-btn">Submit</button>
+                </div>
 
                 <div className="footer-nav">
                   <div className="footer-nav-first-nav">
@@ -5477,12 +5462,7 @@ const homePage = () => {
             </div>
 
             <div className="footer-df">
-              <div className="footer-center">
-                <div className="footer-search">
-                  <input type="email" name="" id="" placeholder="Email" />
-                  <button id="yellow-btn">Submit</button>
-                </div>
-              </div>
+              <div className="footer-center"></div>
 
               <div className="fotter-show-social">
                 <h2 id="inta-left">Instagram</h2>

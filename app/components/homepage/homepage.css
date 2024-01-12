@@ -149,7 +149,7 @@ header nav svg {
 
 .hi {
   color: rgb(255, 160, 134);
-  display: flex;
+  font-size: 3rem;
 }
 
 .header-heading {
@@ -163,15 +163,10 @@ header nav svg {
 } */
 
 .header-heading h1 {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  margin-top: 5%;
-  text-wrap: nowrap;
-  font-size: 10rem;
+  text-align: center;
+  font-size: 2.5rem;
   font-family: "calibrib";
-  gap: 20px;
-  /* animation: slidein 15s infinite linear; */
+  margin-top: 13%;
 }
 
 @keyframes slidein {
@@ -388,8 +383,8 @@ header nav svg {
 .square-fl {
   display: flex;
   justify-content: center;
-  margin-top: 17%;
-  margin-bottom: 7%;
+  margin-top: 15%;
+  margin-bottom: -7%;
 }
 
 .dot {
@@ -1490,7 +1485,7 @@ li.dis-no-in-big-screen {
 
 .fotter-mid-top {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5%;
 }
@@ -1543,8 +1538,6 @@ li.dis-no-in-big-screen {
 .footer-center {
   justify-content: space-between;
   display: flex;
-  border-top: 2px dashed #000000;
-  border-bottom: 2px dashed #0a0a0a;
   justify-content: space-between;
   padding-top: 2%;
   width: 100%;
@@ -2233,6 +2226,7 @@ li.dis-no-in-big-screen {
 }
 
 .banner-text {
+  margin-top: 10%;
   position: relative;
   /* transition: all 2s ease; */
 }
@@ -3489,7 +3483,7 @@ li.dis-no-in-big-screen {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .header-heading h1 {
+  /* .header-heading h1 {
     font-size: 5rem;
-  }
+  } */
 }

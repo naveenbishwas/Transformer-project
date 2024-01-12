@@ -31,6 +31,10 @@ const page = () => {
     useInView();
   const { ref: processAnimationEighteen, inView: isProcessEighteenVis } =
     useInView();
+  const { ref: companyMissionPara, inView: isCompanyParaVisible } = useInView();
+  const { ref: companyVisionPara, inView: isCompanyVisionVisible } =
+    useInView();
+  const { ref: companyValues, inView: isCompanyValueVisible } = useInView();
 
   return (
     <div className="main-container">
@@ -310,6 +314,49 @@ const page = () => {
             />
           </div>
         </div>
+
+        <div className="about-more-content">
+          <p id="first-comp">
+            We are one of the first companies in India to manufacture Corrugated
+            Tanks and Fin Walls and have been serving in India and across the
+            globe to various transformer OEMs.
+          </p>
+
+          <p id="total-area">
+            With a total area of approximately 16,000 sq. feet, our
+            state-of-the-art manufacturing unit houses most modern machines like
+            automatic folding and welding line, CNC cutting and marking machine,
+            shearing and press brake, dust proof paint shop. We also have an
+            in-house design team who can assist you in making most economical
+            and production oriented tank designs. Quality of our tanks and fin
+            walls are subject to stringent tests before delivery such as
+          </p>
+
+          <ul>
+            <div className="more-content-df">
+              <div className="more-content-dots"></div>
+              <li>Visual and dimensional inspection at every stage</li>
+            </div>
+            <div className="more-content-df">
+              <div className="more-content-dots"></div>
+              <li>
+                Pressure test and fluorescent penetrant with ultra-violet light
+                test for leakage
+              </li>
+            </div>
+            <div className="more-content-df">
+              <div className="more-content-dots"></div>
+              <li>Paint thickness and adhesion test</li>
+            </div>
+            <div className="more-content-df">
+              <div className="more-content-dots"></div>
+              <li>
+                Additional tests like fatigue test, endurance test, salt spray
+                test etc. can be arranged as per customer requirements
+              </li>
+            </div>
+          </ul>
+        </div>
       </section>
 
       {/* <section className="core-values">
@@ -534,7 +581,13 @@ const page = () => {
         <div className="number1">
           <div className="number-head">
             <h2>Company Vision</h2>
-            <p id="number-para1">
+            <p
+              ref={companyMissionPara}
+              className={`${
+                isCompanyParaVisible ? "company-para-intersect" : "company-text"
+              }`}
+              id="number-para1"
+            >
               To Become Worldwide Industry Leader in the field of Transformer
               Cooling Radiators, Fabrication of Transformer Tanks and Electrical
               Panels / Enclosures, thereby creating maximum value for our
@@ -546,52 +599,204 @@ const page = () => {
         <div className="number2">
           <div className="number-head">
             <h2>Company Mission</h2>
-            <p id="number-para2">
-              Our Mission serves as a roadmap towards our Vision and guides
-              every aspect of our working:
-            </p>
-            <ul>
-              <li>
-                People: Be a great place to work where people are inspired,
-                involved and motivated.
-              </li>
-              <li>
-                Product & Quality: Bring to the world a portfolio of quality
-                products that satisfy’s .
-              </li>
-              <li>
-                Productivity: Be a highly productive, lean and cost effective
-                organisation
-              </li>
-              <li>
-                Profit: Maximize long-term return to shareholders while being
-                mindful of our overall responsibilities
-              </li>
-            </ul>
+            <div
+              ref={companyVisionPara}
+              className={`${
+                isCompanyVisionVisible
+                  ? "companyVision-intersect"
+                  : "companyVision-text"
+              }`}
+            >
+              <p id="number-para2">
+                Our Mission serves as a roadmap towards our Vision and guides
+                every aspect of our working:
+              </p>
+              <ul>
+                <div className="mission-df">
+                  <div className="numbers-dot"></div>
+                  <li>
+                    People: Be a great place to work where people are inspired,
+                    involved and motivated.
+                  </li>
+                </div>
+                <div className="mission-df">
+                  <div className="numbers-dot"></div>
+                  <li>
+                    Product & Quality: Bring to the world a portfolio of quality
+                    products that satisfy’s .
+                  </li>
+                </div>
+                <div className="mission-df">
+                  <div className="numbers-dot"></div>
+                  <li>
+                    People: Be a great place to work where people are inspired,
+                    involved and motivated.
+                  </li>
+                </div>
+                <div className="mission-df">
+                  <div className="numbers-dot"></div>
+                  <li>
+                    Profit: Maximize long-term return to shareholders while
+                    being mindful of our overall responsibilities
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div className="number3">
           <div className="number-head">
             <h2>Company Values</h2>
-            <ul>
-              <li>Quality: What we do, we do well</li>
-              <li>Honestly & Integrity: Be real and genuine</li>
-              <li>
-                Building Relations: Understand customers and suppliers and build
-                long term association
-              </li>
-              <li>Passion: Committed with heart, mind and soul</li>
+            <ul
+              ref={companyValues}
+              className={`${
+                isCompanyValueVisible
+                  ? "company-values-intersect"
+                  : "company-values"
+              }`}
+            >
+              <div className="number3-df">
+                <div className="numbers-dot"></div>
+                <li>Quality: What we do, we do well</li>
+              </div>
+              <div className="number3-df">
+                <div className="numbers-dot"></div>
+                <li>Honestly & Integrity: Be real and genuine</li>
+              </div>
+              <div className="number3-df">
+                <div className="numbers-dot"></div>
+                <li id="building">
+                  Building Relations: Understand customers and suppliers and
+                  build long term association
+                </li>
+              </div>
+              <div className="number3-df">
+                <div className="numbers-dot"></div>
+                <li>Passion: Committed with heart, mind and soul</li>
+              </div>
             </ul>
           </div>
         </div>
 
-        <div className="number4">
+        {/* <div className="number4">
           <div className="number-head">
             <h2>Our Markets</h2>
             <ul>
               <li>Graph or world map with countries marked up</li>
               <li>Logo of customers</li>
+            </ul>
+          </div>
+        </div> */}
+      </section>
+
+      <section>
+        <div className="cogguarted-tanks-info">
+          <h1>Coggurated Tanks</h1>
+          <div className="cogguarted-tanks-info-para">
+            <p>
+              Tashe’s Corrugated fin walls are formed on a fully automatic
+              folding and welding line. Our corrugated fins are passed for
+              Fatigue Test as per SANS 780:2009 at 11,000 cycles, which is
+              equivalent to 30 years of transformer life.
+            </p>
+            <p>
+              Corrugations are provided with embossed channels and spot welds
+              for greater stability and effective heat dissipation. Rectangular
+              strip is provided underneath the corrugated walls for greater
+              strength and support during welding to the tanks. Upward or
+              downward edge bending of corrugated walls can be done as per
+              requirements.{" "}
+            </p>
+            <p>
+              Corrugated fins for all four sides of the transformer can be
+              formed in one piece to avoid weld joints. Dye Penetration test is
+              done for every single fin wall for identifying leakage or cracks
+              in welding, thereby ensuring fins are 100% leak proof before
+              delivery.
+            </p>
+          </div>
+        </div>
+
+        <div className="coggurated-fins-walls">
+          <div className="coggurated-fins-walls-heading">
+            <h1>coggurated fins walls</h1>
+          </div>
+          <div className="coggurated-fins-walls-content">
+            <p>
+              Tashe’s Corrugated fin walls are formed on a fully automatic
+              folding and welding line. Our corrugated fins are passed for
+              Fatigue Test as per SANS 780:2009 at 11,000 cycles, which is
+              equivalent to 30 years of transformer life.
+            </p>
+
+            <p>
+              Corrugations are provided with embossed channels and spot welds
+              for greater stability and effective heat dissipation. Rectangular
+              strip is provided underneath the corrugated walls for greater
+              strength and support during welding to the tanks. Upward or
+              downward edge bending of corrugated walls can be done as per
+              requirements.
+            </p>
+
+            <p>
+              Corrugated fins for all four sides of the transformer can be
+              formed in one piece to avoid weld joints. Dye Penetration test is
+              done for every single fin wall for identifying leakage or cracks
+              in welding, thereby ensuring fins are 100% leak proof before
+              delivery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="quality">
+        <div className="quality-heading">
+          <h1>Quality:</h1>
+        </div>
+        <div className="quality-content">
+          <div className="quality-info">
+            <p>
+              We at Tashe, are committed to serve our customers and meet their
+              needs and expectations in the design, manufacture and supply of
+              reliable and innovative technologies and products.
+            </p>
+            <p>
+              We are committed to continuing improvement of our products and
+              services to achieve increased customer satisfaction as well as to
+              ensure compliance with the requirements of the Quality Management
+              System and its continuing improvement.
+            </p>
+          </div>
+          <div className="testing-control">
+            <h1>Testing and Control:</h1>
+            <p>
+              Quality of our tanks and fin walls are subject to stringent tests
+              before delivery such as
+            </p>
+            <ul>
+              <div className="testing-df">
+                <div className="testing-dots"></div>
+                <li>Visual and dimensional inspection at every stage</li>
+              </div>
+              <div className="testing-df">
+                <div className="testing-dots"></div>
+                <li>
+                  Pressure test and fluorescent penetrant with ultra-violet
+                  light test for leakage
+                </li>
+              </div>
+              <div className="testing-df">
+                <div className="testing-dots"></div>
+                <li>Paint thickness and adhesion test</li>
+              </div>
+              <div className="testing-df">
+                <div className="testing-dots"></div>
+                <li>
+                  Additional tests like fatigue test, endurance test, salt spray
+                  test etc. can be arranged as per customer requirements
+                </li>
+              </div>
             </ul>
           </div>
         </div>
