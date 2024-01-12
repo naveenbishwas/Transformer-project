@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./homepage.css";
 import { useInView } from "react-intersection-observer";
 
-const homePage = () => {
+const HomePage = () => {
   const { ref: paraOne, inView: isParaOneVisible } = useInView();
   const { ref: paraTwo, inView: isParaTwoVisible } = useInView();
   const { ref: paraBtn, inView: isParaBtnVisible } = useInView();
@@ -5537,4 +5537,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;
