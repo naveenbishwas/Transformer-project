@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import "./about.css";
 import { useInView } from "react-intersection-observer";
 
-const page = () => {
+const Page = () => {
   const { ref: processAnimationOne, inView: isProcessOneVis } = useInView();
   const { ref: processAnimationTwo, inView: isProcessTwoVis } = useInView();
   const { ref: processAnimationThree, inView: isProcessThreeVis } = useInView();
@@ -1294,4 +1294,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
