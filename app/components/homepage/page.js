@@ -307,30 +307,48 @@ const homePage = () => {
           What We <span id="red-made">Made</span>
         </h1>
         <div className="we-made-para">
-          <p
-            ref={paraOne}
-            id="made-para-one"
-            className={`${
-              isParaOneVisible ? "animation-para-one" : "tranfrom-made-paraone"
-            }`}
-          >
-            We manufacture Corrugated and conventional transformer tanks ranging
-            from 10KVA to 15MVA. Our tanks stand out due to their manufacturing
-            quality with highest dimensional accuracy and weld seam quality.
-          </p>
+          <div className="para-one">
+            <p
+              ref={paraOne}
+              id="made-para-one"
+              className={`${
+                isParaOneVisible
+                  ? "animation-para-one"
+                  : "tranfrom-made-paraone"
+              }`}
+            >
+              We manufacture Corrugated and conventional transformer tanks
+              ranging from 10KVA to 15MVA. Our tanks stand out due to their
+              manufacturing quality with highest dimensional accuracy and weld
+              seam quality.
+            </p>
+            <img
+              src="https://images.pexels.com/photos/5411674/pexels-photo-5411674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
 
-          <p
-            ref={paraTwo}
-            id="made-para-two"
-            className={`${
-              isParaTwoVisible ? "animation-para-two" : "tranfrom-made-paratwo"
-            }`}
-          >
-            Various tank fitments like top covers, cable boxes, conservator are
-            made with highest accuracy and precise positioning. On request,
-            additional stainless steel plates can be added with guaranteed weld
-            joints.
-          </p>
+          <div className="para-two">
+            <p
+              ref={paraTwo}
+              id="made-para-two"
+              className={`${
+                isParaTwoVisible
+                  ? "animation-para-two"
+                  : "tranfrom-made-paratwo"
+              }`}
+            >
+              Various tank fitments like top covers, cable boxes, conservator
+              are made with highest accuracy and precise positioning. On
+              request, additional stainless steel plates can be added with
+              guaranteed weld joints.
+            </p>
+
+            <img
+              src="https://images.pexels.com/photos/256297/pexels-photo-256297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
         </div>
         <div className="we-made-btn">
           <button
@@ -339,7 +357,7 @@ const homePage = () => {
               isParaBtnVisible ? "animate__animated animate__rubberBand" : "a"
             }`}
           >
-            Read More
+            <a href="/components/about">Read More</a>
           </button>
         </div>
       </section>
@@ -504,6 +522,34 @@ const homePage = () => {
             <div class="without-detail">
               <h1>(Without two embossing)</h1>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="banner-text">
+        <div className="banner-text-image">
+          <img
+            src="https://images.pexels.com/photos/10087999/pexels-photo-10087999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+
+        <div className="banner-text-content">
+          <div className="banner-text-content-para-two">
+            <p>
+              The most reliable and stringent tests are conducted under
+              prescribed pressure to eliminate any leakage. We shot blast every
+              single tank as per Sa 3/Sa 2.5 to ensure absolute surface cleaning
+              and paint adhesion. Different painting schemes can be offered for
+              obtaining optimum corrosion protection
+            </p>
+
+            <ul>
+              <li>Zinc Metallizing to provide higher corrosion resistance </li>
+              <li>Flood painting for even coat and superior finish </li>
+              <li>Spray painting </li>
+              <li>Hot Oil Resistance paint for internal surface of tanks</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1018,55 +1064,16 @@ const homePage = () => {
           </div>
         </div>
       </section>
-
+      {/* 
       <div class="explore-tashe">
-        <div class="explore-tashe-one"></div>
-        <h3>Explore Tashe</h3>
+        <div class="explore-tashe-one">
+          <h3>
+            <a href="/components/homepage">Explore tashe</a>
+          </h3>
+        </div>
+
         <div class="explore-tashe-two"></div>
-      </div>
-
-      <section className="banner-text">
-        <div className="banner-text-image">
-          <img
-            src="https://images.pexels.com/photos/269318/pexels-photo-269318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt=""
-          />
-        </div>
-
-        <div className="banner-text-content">
-          <div className="banner-text-content-para-one">
-            <p>
-              We manufacture corrugated and conventional transformer tanks
-              ranging from 10KVA to 15MVA. Our tanks stand out due to their
-              manufacturing quality with highest dimensional accuracy and weld
-              seam quality.
-            </p>
-            <p id="banner-second-para">
-              Various tank fitments like top covers, cable boxes, conservators
-              are made with highest accuracy and precise positioning. On
-              request, additional stainless steel plates can be added with
-              guaranteed weld joints.
-            </p>
-          </div>
-
-          <div className="banner-text-content-para-two">
-            <p>
-              The most reliable and stringent tests are conducted under
-              prescribed pressure to eliminate any leakage. We shot blast every
-              single tank as per Sa 3/Sa 2.5 to ensure absolute surface cleaning
-              and paint adhesion. Different painting schemes can be offered for
-              obtaining optimum corrosion protection
-            </p>
-
-            <ul>
-              <li>Zinc Metallizing to provide higher corrosion resistance </li>
-              <li>Flood painting for even coat and superior finish </li>
-              <li>Spray painting </li>
-              <li>Hot Oil Resistance paint for internal surface of tanks</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      </div> */}
 
       <section className="cooler-products">
         {/* <div className={loaded ? "cooler-text" : "title-unloadeds"}>
@@ -1082,13 +1089,13 @@ const homePage = () => {
           </p>
         </div> */}
 
-        <div className="lets-talk">
+        {/* <div className="lets-talk">
           <div className="lets-talk-b1"></div>
           <h3>Let's Talk</h3>
           <div className="lets-talk-b2"></div>
-        </div>
+        </div> */}
 
-        <div className="spin-sun" id="spin-sun-two">
+        {/* <div className="spin-sun" id="spin-sun-two">
           <svg
             width="50"
             height="50"
@@ -1101,7 +1108,7 @@ const homePage = () => {
               fill="white"
             ></path>
           </svg>
-        </div>
+        </div> */}
       </section>
 
       {/* <section className="do-the-must">
@@ -1211,7 +1218,7 @@ const homePage = () => {
         </div>
       </section> */}
 
-      <section className="everything-in-between">
+      {/* <section className="everything-in-between">
         <h1 id="ever-green">
           And <span className="orange">everything</span> in
           <span className="green"> between</span>
@@ -1262,7 +1269,7 @@ const homePage = () => {
             </span>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="we-re-everyhting">
         <div className="sqyare-df">
@@ -5331,7 +5338,9 @@ const homePage = () => {
 
                 <div className="footer-search">
                   <input type="email" name="" id="" placeholder="Email" />
-                  <button id="yellow-btn">Submit</button>
+                  <button className="animate__animated animate__fadeIn">
+                    Submit
+                  </button>
                 </div>
 
                 <div className="footer-nav">
