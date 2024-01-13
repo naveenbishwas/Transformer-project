@@ -132,15 +132,15 @@ body {
 
 .about-company p {
 }
+
 nav {
   display: flex;
   justify-content: center;
-  margin-top: 3%;
 }
 
-nav h1 {
-  cursor: pointer;
-  font-size: 2rem;
+nav img {
+  width: 73px;
+  margin-top: 43%;
 }
 
 header nav svg {
@@ -454,7 +454,7 @@ li.dis-no-in-big-screen {
 .benefits-content {
   display: flex;
   text-wrap: nowrap;
-  animation: benefit 28s infinite linear;
+  animation: benefit 50s infinite linear;
 }
 
 @keyframes benefit {
@@ -2321,15 +2321,19 @@ li.dis-no-in-big-screen {
   }
 
   .header-heading h1 {
-    margin-top: 45%;
-    font-size: 20px;
-    max-width: 80%;
-    margin-left: 13%;
+    margin-top: 38%;
+    font-size: 22px;
+    max-width: 94%;
+    margin-left: 2%;
   }
 
   .hi {
     color: rgb(255, 160, 134);
-    font-size: 22px;
+    font-size: 25px;
+  }
+
+  .para-one img {
+    margin-top: 26px;
   }
 
   .dis-no {
@@ -2378,7 +2382,6 @@ li.dis-no-in-big-screen {
   .square-fl {
     margin-top: 50%;
     margin-bottom: 26%;
-    margin-left: 6%;
     overflow: hidden;
   }
 
@@ -2411,7 +2414,7 @@ li.dis-no-in-big-screen {
     border-radius: 50%;
     position: absolute;
     animation: ellipse1-trans 9s infinite linear;
-    margin-top: 20%;
+    margin-top: 32%;
   }
 
   .ellipse2 {
@@ -2421,7 +2424,24 @@ li.dis-no-in-big-screen {
     border-radius: 50%;
     position: absolute;
     animation: ellipse1-trans2 9s infinite linear;
-    margin-top: 20%;
+    margin-top: 32%;
+  }
+
+  .showing {
+    flex-direction: column;
+  }
+
+  .showing h1 {
+    text-wrap: wrap;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .showing img {
+    width: 25px;
+    filter: brightness(0) invert(1);
   }
 
   .para-one {
@@ -3255,16 +3275,34 @@ li.dis-no-in-big-screen {
     margin-top: 20%;
   }
 
-  .typeof-fins {
-    margin-top: 50%;
-  }
-
   .fin-text {
     font-size: 2.3rem;
   }
 
   .fins-content-intersect {
     font-size: 18px;
+  }
+
+  .spin-sun img {
+    border: 1px solid;
+    padding: 8px;
+    width: 66px;
+  }
+
+  .zinc-icons img {
+    width: 55px;
+    animation: zinc--rotate 10s infinite alternate;
+  }
+
+  .banner-text-image img {
+    height: 240px;
+    margin-top: 30%;
+  }
+
+  .banner-text:hover .banner-text-content {
+    display: flex;
+    height: 240px;
+    opacity: 0.7;
   }
 
   .benefit-of-trash h1 {
@@ -3283,6 +3321,14 @@ li.dis-no-in-big-screen {
   .benefits-content p {
     margin-left: 65px;
     font-size: 1.5rem;
+  }
+
+  .banner-text-content-para-two {
+    max-width: 90%;
+  }
+
+  .banner-text-content-para-two ul li {
+    font-size: 17px;
   }
 
   .benefits-content svg {
@@ -3324,11 +3370,11 @@ li.dis-no-in-big-screen {
 
   .we-made-intersect-head {
     transition: all 3s ease;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "calibri";
     font-style: italic;
-    letter-spacing: -4px;
-    word-spacing: 11px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
     transform: translateX(24px);
     width: fit-content;
   }
@@ -3364,6 +3410,10 @@ li.dis-no-in-big-screen {
 
   .footer-end h2 {
     margin-top: 14%;
+  }
+
+  .tranfrom-made-paratwo {
+    transform: translateY(15%);
   }
 }
 
@@ -3521,10 +3571,6 @@ li.dis-no-in-big-screen {
     margin-top: 12%;
   }
 
-  .animation-para-one {
-    margin-left: 21%;
-  }
-
   .animation-para-two {
     margin-left: 4%;
   }
@@ -3535,6 +3581,68 @@ li.dis-no-in-big-screen {
 
   .footer-width {
     margin-top: -10%;
+  }
+
+  .we-made-para img {
+    height: 241px;
+    width: 56%;
+  }
+
+  nav img {
+    width: 73px;
+    margin-top: -22%;
+  }
+
+  .ellipse2 {
+    border: 1px solid #000000;
+    width: 47vw;
+    height: 70vh;
+    border-radius: 50%;
+    position: absolute;
+    animation: ellipse1-trans2 9s infinite linear;
+    margin-top: 15%;
+  }
+
+  .ellipse1 {
+    border: 1px solid #000000;
+    width: 47vw;
+    height: 70vh;
+    border-radius: 50%;
+    position: absolute;
+    animation: ellipse1-trans 9s infinite linear;
+    margin-top: 15%;
+  }
+
+  .header-heading h1 {
+    margin-top: 28%;
+    font-size: 28px;
+    max-width: 100%;
+    margin-left: 2%;
+  }
+
+  .hi {
+    color: rgb(255, 160, 134);
+    font-size: 32px;
+  }
+
+  .we-made-para p {
+    font-size: 21px;
+    max-width: 86%;
+    text-align: center;
+    margin-top: 12%;
+  }
+
+  .we-made-intersect-head {
+    transition: all 3s ease;
+    border-bottom: 1px dashed;
+    font-size: 4rem;
+    font-family: "calibri";
+    font-style: italic;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    transform: translateX(24px);
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -3563,10 +3671,43 @@ li.dis-no-in-big-screen {
   .curious h1 {
     font-size: 4rem;
   }
+
+  .spin-sun img {
+    border: 1px solid;
+    padding: 8px;
+    width: 105px;
+  }
+
+  .benefit-of-trash h1 {
+    font-size: 2.2rem;
+  }
+  .banner-text-image img {
+    height: 354px;
+    margin-top: 13%;
+  }
+
+  .banner-text:hover .banner-text-content {
+    display: flex;
+    height: 354px;
+    opacity: 0.7;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   /* .header-heading h1 {
     font-size: 5rem;
   } */
+
+  .tranfrom-made-paratwo {
+    transform: translateY(50%);
+  }
+
+  .with-two-embossing {
+    transform: translateY(40%);
+    margin-top: -15%;
+  }
+
+  .banner-text-content-para-two ul li {
+    margin-top: 7%;
+  }
 }

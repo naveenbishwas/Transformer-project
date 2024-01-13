@@ -61,7 +61,7 @@ const Page = () => {
               </p>
             </div>
 
-            <div className="header-dot-df">
+            {/* <div className="header-dot-df">
               <div className="header-dot"></div>
               <div className="header-sun">
                 <svg
@@ -77,7 +77,7 @@ const Page = () => {
                   ></path>
                 </svg>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -308,10 +308,7 @@ const Page = () => {
             </div>
           </div>
           <div className="about-us-info-image">
-            <img
-              src="https://images.pexels.com/photos/10040001/pexels-photo-10040001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt=""
-            />
+            <img src="/tashe-images/about-us.JPG" alt="" />
           </div>
         </div>
 
@@ -818,7 +815,7 @@ const Page = () => {
               </ul>
 
               <div className="testing-image">
-                <img src="/tashe-images/testing.JPG" alt="" />
+                <img src="/tashe-images/testing2.JPG" alt="" />
               </div>
             </div>
           </div>
@@ -831,6 +828,7 @@ const Page = () => {
           <div className="certi-image">
             <img src="/tashe-images/certification.JPG" alt="" />
             <img src="/tashe-images/certification2.JPG" alt="" />
+            <img src="/tashe-images/testing.JPG" alt="" />
           </div>
         </div>
       </section>
@@ -1301,8 +1299,8 @@ const Page = () => {
           </div>
         </div>
       </footer> */}
-      <footer className="curious">
-        {/* <h1 id="hide-cur">
+      {/* <footer className="curious">
+        <h1 id="hide-cur">
           <span id="left">
             curious? <br />
           </span>
@@ -1347,16 +1345,16 @@ const Page = () => {
           </span>
           <span className="orange">let's talk </span>
         </h1>
-        <p>explore your option</p> */}
-        {/* <div className="explore-div">
+        <p>explore your option</p>
+        <div className="explore-div">
           <hr className="explore" />
-        </div> */}
+        </div>
 
         <div className="footer-df1">
           <div className="footer-width">
             <div className="footer-mid">
               <div className="fotter-mid-top">
-                {/* <div className="fotter-mid-top-left">
+                <div className="fotter-mid-top-left">
                   <svg
                     width="100%"
                     height="100%"
@@ -1413,7 +1411,7 @@ const Page = () => {
                       fill="white"
                     ></path>
                   </svg>
-                </div> */}
+                </div>
 
                 <div className="footer-search">
                   <input type="email" name="" id="" placeholder="Email" />
@@ -1443,11 +1441,11 @@ const Page = () => {
                         </a>
                       </li>
 
-                      {/* <li>
+                      <li>
                         <a href="#" id="red">
                           Hoox
                         </a>
-                      </li> */}
+                      </li>
                     </ul>
                   </div>
 
@@ -1459,17 +1457,17 @@ const Page = () => {
                         </a>
                       </li>
 
-                      {/* <li>
+                      <li>
                         <a href="#" id="blue">
                           Case Studiio
                         </a>
-                      </li> */}
+                      </li>
 
-                      {/* <li>
+                      <li>
                         <a href="#" id="red">
                           Panthers
                         </a>
-                      </li> */}
+                      </li>
                     </ul>
                   </div>
 
@@ -1579,11 +1577,10 @@ const Page = () => {
               <div className="footer-end-right">
                 <li id="terms-cond">TERMS AND CONDITIONS</li>
                 <li>PRIVACY POLICY</li>
-                {/* <li>Acessibility</li> */}
               </div>
             </div>
 
-            {/* <h1 id="hide-cur">
+            <h1 id="hide-cur">
               <span id="left">
                 curious? <br />
               </span>
@@ -1606,13 +1603,10 @@ const Page = () => {
                 </span>
                 <span className="orange">let's talk </span>
               </div>
-            </h1> */}
-            {/* <p id="purple">explore your option</p> */}
-
-            {/* <div class="explore-div"><hr class="explore" /></div> */}
+            </h1>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
