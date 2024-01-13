@@ -46,7 +46,7 @@ const Page = () => {
         </div>
         <nav>
           <a href="/components/homepage">
-            <img src="/svg icons/t.png" alt="" />
+            <img src={"/svg icons/t.png"} alt="" />
           </a>
         </nav>
 
@@ -308,7 +308,7 @@ const Page = () => {
             </div>
           </div>
           <div className="about-us-info-image">
-            <img src="/tashe-images/about-us.JPG" alt="" />
+            <img src={"/tashe-images/about-us.jpg"} alt="" />
           </div>
         </div>
 
