@@ -45,9 +45,9 @@ const Page = () => {
           <div class="ellipse3"></div>
         </div>
         <nav>
-          <h1>
-            <a href="/components/homepage">Tashe</a>
-          </h1>
+          <a href="/components/homepage">
+            <img src="/svg icons/t.png" alt="" />
+          </a>
         </nav>
 
         <section class="header-heading">
@@ -262,7 +262,7 @@ const Page = () => {
         </section>
       </header>
 
-      <div className="cor-sun-df">
+      {/* <div className="cor-sun-df">
         <svg
           width="100%"
           height="100%"
@@ -275,7 +275,7 @@ const Page = () => {
             fill="white"
           ></path>
         </svg>
-      </div>
+      </div> */}
 
       <section className="about-us-info">
         <div className="about-us-info-text-heading">
@@ -718,10 +718,7 @@ const Page = () => {
               </p>
             </div>
             <div className="coruggated-image">
-              <img
-                src="https://images.pexels.com/photos/1267330/pexels-photo-1267330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-              />
+              <img src="/tashe-images/c-tanks.JPG" alt="" />
             </div>
           </div>
         </div>
@@ -757,67 +754,83 @@ const Page = () => {
               </p>
             </div>
             <div className="coggurated-fins-walls-img">
-              <img
-                src="https://images.pexels.com/photos/1267331/pexels-photo-1267331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt=""
-              />
+              <img src="/tashe-images/finn-walls.JPG" alt="" />
             </div>
           </div>
         </div>
 
-        <div className="quality-heading">
-          <h1>Quality:</h1>
-        </div>
-        <div className="quality-content">
-          <div className="quality-info">
-            <p>
-              We at Tashe, are committed to serve our customers and meet their
-              needs and expectations in the design, manufacture and supply of
-              reliable and innovative technologies and products.
-            </p>
-            <p>
-              We are committed to continuing improvement of our products and
-              services to achieve increased customer satisfaction as well as to
-              ensure compliance with the requirements of the Quality Management
-              System and its continuing improvement.
-            </p>
+        <div className="quality">
+          <div className="quality-heading">
+            <h1>Quality:</h1>
           </div>
+          <div className="quality-df">
+            <div className="quality-content">
+              <p>
+                We at Tashe, are committed to serve our customers and meet their
+                needs and expectations in the design, manufacture and supply of
+                reliable and innovative technologies and products.
+              </p>
+              <p>
+                We are committed to continuing improvement of our products and
+                services to achieve increased customer satisfaction as well as
+                to ensure compliance with the requirements of the Quality
+                Management System and its continuing improvement.
+              </p>
+            </div>
+            <div className="quality-img">
+              <img src="/tashe-images/quality.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div className="testing">
           <div className="testing-control">
             <h1>Testing and Control:</h1>
             <p>
               Quality of our tanks and fin walls are subject to stringent tests
               before delivery such as
             </p>
-            <ul>
-              <div className="testing-df">
-                <div className="testing-dots"></div>
-                <li>Visual and dimensional inspection at every stage</li>
+            <div className="testing-dis-fl">
+              <ul>
+                <div className="testing-df">
+                  <div className="testing-dots"></div>
+                  <li>Visual and dimensional inspection at every stage</li>
+                </div>
+
+                <div className="testing-df">
+                  <div className="testing-dots"></div>
+                  <li>
+                    Pressure test and fluorescent penetrant with ultra-violet
+                    light test for leakage
+                  </li>
+                </div>
+                <div className="testing-df">
+                  <div className="testing-dots"></div>
+                  <li>Paint thickness and adhesion test</li>
+                </div>
+                <div className="testing-df">
+                  <div className="testing-dots"></div>
+                  <li>
+                    Additional tests like fatigue test, endurance test, salt
+                    spray test etc. can be arranged as per customer requirements
+                  </li>
+                </div>
+              </ul>
+
+              <div className="testing-image">
+                <img src="/tashe-images/testing.JPG" alt="" />
               </div>
-              <div className="testing-df">
-                <div className="testing-dots"></div>
-                <li>
-                  Pressure test and fluorescent penetrant with ultra-violet
-                  light test for leakage
-                </li>
-              </div>
-              <div className="testing-df">
-                <div className="testing-dots"></div>
-                <li>Paint thickness and adhesion test</li>
-              </div>
-              <div className="testing-df">
-                <div className="testing-dots"></div>
-                <li>
-                  Additional tests like fatigue test, endurance test, salt spray
-                  test etc. can be arranged as per customer requirements
-                </li>
-              </div>
-            </ul>
+            </div>
           </div>
         </div>
 
         <div className="certificatiion">
           <div className="certification-heading">
             <h1>Certification</h1>
+          </div>
+          <div className="certi-image">
+            <img src="/tashe-images/certification.JPG" alt="" />
+            <img src="/tashe-images/certification2.JPG" alt="" />
           </div>
         </div>
       </section>
@@ -979,6 +992,315 @@ const Page = () => {
         </div>
       </section> */}
 
+      {/* <footer className="curious">
+        <h1 id="hide-cur">
+          <span id="left">
+            curious? <br />
+          </span>
+          <div className="cur-df">
+            <span>
+              <div id="curious-spin">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.9084 0.506769C15.0209 -0.160141 15.9791 -0.160143 16.0916 0.506767L17.197 7.05849C17.2825 7.56515 17.9237 7.73698 18.2511 7.34094L22.4842 2.21966C22.9151 1.69836 23.745 2.17748 23.509 2.8113L21.1904 9.03794C21.0111 9.51946 21.4805 9.9889 21.9621 9.8096L28.1887 7.49101C28.8225 7.255 29.3016 8.08486 28.7803 8.51576L23.6591 12.7489C23.263 13.0763 23.4348 13.7175 23.9415 13.803L30.4932 14.9084C31.1601 15.0209 31.1601 15.9791 30.4932 16.0916L23.9415 17.197C23.4348 17.2825 23.263 17.9237 23.6591 18.2511L28.7803 22.4842C29.3016 22.9151 28.8225 23.745 28.1887 23.509L21.9621 21.1904C21.4805 21.0111 21.0111 21.4805 21.1904 21.9621L23.509 28.1887C23.745 28.8225 22.9151 29.3016 22.4842 28.7803L18.2511 23.6591C17.9237 23.263 17.2825 23.4348 17.197 23.9415L16.0916 30.4932C15.9791 31.1601 15.0209 31.1601 14.9084 30.4932L13.803 23.9415C13.7175 23.4348 13.0763 23.263 12.7489 23.6591L8.51576 28.7803C8.08486 29.3016 7.255 28.8225 7.49101 28.1887L9.8096 21.9621C9.9889 21.4805 9.51946 21.0111 9.03794 21.1904L2.8113 23.509C2.17748 23.745 1.69836 22.9151 2.21966 22.4842L7.34094 18.2511C7.73698 17.9237 7.56515 17.2825 7.05849 17.197L0.506769 16.0916C-0.160141 15.9791 -0.160143 15.0209 0.506767 14.9084L7.05849 13.803C7.56515 13.7175 7.73698 13.0763 7.34094 12.7489L2.21966 8.51576C1.69836 8.08486 2.17748 7.255 2.8113 7.49101L9.03794 9.8096C9.51946 9.9889 9.9889 9.51946 9.8096 9.03794L7.49101 2.8113C7.255 2.17748 8.08486 1.69836 8.51576 2.21966L12.7489 7.34094C13.0763 7.73698 13.7175 7.56515 13.803 7.05849L14.9084 0.506769Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </div>
+            </span>
+            <span className="orange">let's talk </span>
+          </div>
+        </h1>
+
+        <h1 id="show-cur">
+          curious?
+          <span>
+            <div id="curious-spin">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.9084 0.506769C15.0209 -0.160141 15.9791 -0.160143 16.0916 0.506767L17.197 7.05849C17.2825 7.56515 17.9237 7.73698 18.2511 7.34094L22.4842 2.21966C22.9151 1.69836 23.745 2.17748 23.509 2.8113L21.1904 9.03794C21.0111 9.51946 21.4805 9.9889 21.9621 9.8096L28.1887 7.49101C28.8225 7.255 29.3016 8.08486 28.7803 8.51576L23.6591 12.7489C23.263 13.0763 23.4348 13.7175 23.9415 13.803L30.4932 14.9084C31.1601 15.0209 31.1601 15.9791 30.4932 16.0916L23.9415 17.197C23.4348 17.2825 23.263 17.9237 23.6591 18.2511L28.7803 22.4842C29.3016 22.9151 28.8225 23.745 28.1887 23.509L21.9621 21.1904C21.4805 21.0111 21.0111 21.4805 21.1904 21.9621L23.509 28.1887C23.745 28.8225 22.9151 29.3016 22.4842 28.7803L18.2511 23.6591C17.9237 23.263 17.2825 23.4348 17.197 23.9415L16.0916 30.4932C15.9791 31.1601 15.0209 31.1601 14.9084 30.4932L13.803 23.9415C13.7175 23.4348 13.0763 23.263 12.7489 23.6591L8.51576 28.7803C8.08486 29.3016 7.255 28.8225 7.49101 28.1887L9.8096 21.9621C9.9889 21.4805 9.51946 21.0111 9.03794 21.1904L2.8113 23.509C2.17748 23.745 1.69836 22.9151 2.21966 22.4842L7.34094 18.2511C7.73698 17.9237 7.56515 17.2825 7.05849 17.197L0.506769 16.0916C-0.160141 15.9791 -0.160143 15.0209 0.506767 14.9084L7.05849 13.803C7.56515 13.7175 7.73698 13.0763 7.34094 12.7489L2.21966 8.51576C1.69836 8.08486 2.17748 7.255 2.8113 7.49101L9.03794 9.8096C9.51946 9.9889 9.9889 9.51946 9.8096 9.03794L7.49101 2.8113C7.255 2.17748 8.08486 1.69836 8.51576 2.21966L12.7489 7.34094C13.0763 7.73698 13.7175 7.56515 13.803 7.05849L14.9084 0.506769Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </div>
+          </span>
+          <span className="orange">let's talk </span>
+        </h1>
+        <p>explore your option</p>
+        <div className="explore-div">
+          <hr className="explore" />
+        </div>
+
+        <div className="footer-df1">
+          <div className="footer-width">
+            <div className="footer-mid">
+              <div className="fotter-mid-top">
+                <div className="fotter-mid-top-left">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 3719 1248"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1141 18.1914V608.611H949.148V388.305H760.853V608.611H569.006V18.1914H760.853V235.013H949.148V18.1914H1141Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M1586.72 527.308H1386.63L1361.41 608.611H1155.35L1387.63 18.1914H1586.23L1818.43 608.611H1612.37L1586.72 527.308ZM1546.01 396.904L1486.39 205.025L1426.85 396.904H1546.01Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M3076.88 18.1914V608.611H2886.53V383.759L2833.94 608.611H2707.47L2654.6 383.759V608.611H2464.53V18.1914H2656.38L2770.7 363.932L2887.38 18.1914H3076.88Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M3487.15 527.308H3286.85L3261.69 608.611H3055.63L3287.91 18.1914H3486.51L3718.72 608.611H3512.66L3487.15 527.308ZM3446.65 396.834L3387.1 204.956L3327.56 396.834H3446.65Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M335.449 246.386L252.955 232.173C208.262 224.143 198.884 201.752 198.884 184.411C198.884 157.406 221.264 141.348 258.78 141.348C303.261 141.348 329.835 162.667 335.306 204.17H537.885C525.877 79.8749 414.89 0 252.744 0C99.905 0 1.20737 74.5449 1.20737 189.957C1.20737 290.018 72.2644 363.5 186.591 381.836L273.134 395.341C301.911 399.463 331.327 407.916 331.327 439.896C331.327 461.216 316.334 483.82 274.483 483.82C235.119 483.82 209.967 463.491 202.932 426.537H0C11.9372 562.344 148.788 624.315 273.134 624.315C397.479 624.315 532.056 562.132 532.056 425.329C531.772 330.953 465.976 270.691 335.449 246.386Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M3467.25 869.207L3381.56 854.993C3335.09 846.963 3325.36 824.579 3325.36 807.239C3325.36 780.234 3348.59 764.169 3387.53 764.169C3433.86 764.169 3461.22 785.487 3467.11 826.99H3677.65C3665.21 702.695 3549.75 622.82 3381.35 622.82C3222.61 622.82 3120.01 697.365 3120.01 812.777C3120.01 912.909 3193.83 986.321 3312.64 1004.66L3402.59 1018.16C3432.44 1022.28 3463.06 1030.81 3463.06 1062.79C3463.06 1084.11 3447.43 1106.64 3403.66 1106.64C3362.8 1106.64 3336.66 1086.38 3329.34 1049.36H3118.45C3130.81 1185.24 3273.06 1247.21 3402.31 1247.21C3531.56 1247.21 3671.32 1185.03 3671.32 1048.23C3671.25 953.779 3602.61 893.511 3467.25 869.207Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M2025.98 278.652H2120.41C2177.26 278.652 2187.06 237.572 2187.06 214.262C2187.06 190.952 2170.22 157.409 2118.21 157.409H2025.84L2025.98 278.652ZM1832.43 608.611V18.1914H2266.72C2382.18 18.1914 2426.52 89.7524 2426.52 169.915C2426.52 255.834 2382.53 319.154 2268.14 319.154H2235.24V351.28H2291.37C2409.96 351.28 2426.8 424.268 2426.8 521.131V608.749H2242.34L2238.93 471.385C2236.73 413.039 2227.99 391.928 2176.55 391.928H2026.05V608.749L1832.43 608.611Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M760.853 969.554H843.42C899.837 969.554 909.572 1010.63 909.572 1033.94C909.572 1057.25 892.802 1091.15 841.217 1091.15H760.853V969.554ZM569.006 639.596V1230.08H982.545C1096.94 1230.08 1140.93 1158.52 1140.93 1078.35C1140.93 992.364 1097.37 929.115 983.964 929.115H957.034V896.996H1006.77C1124.37 896.996 1140.85 824.156 1141.07 727.221V639.52H949.148L945.807 776.968C943.604 835.242 934.865 856.417 883.919 856.417H760.853V639.52L569.006 639.596Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M336.302 926.56C488.573 927.058 531.772 981.352 531.772 1061.59C531.772 1163.14 446.508 1230.22 316.051 1230.22H20.6055V639.734H321.38C436.418 639.734 506.691 695.948 506.691 785.42C506.691 843.126 477.417 895.362 364.582 894.581H336.16L336.302 926.56ZM295.942 1104.23C343.336 1104.23 370.765 1079.14 370.765 1039.06C370.765 998.977 340.212 974.53 293.031 974.53H191.067V1104.23H295.942ZM270.719 765.592H191.067V867.292H267.947C311.29 867.292 336.587 851.371 336.587 816.477C336.587 781.584 314.205 765.523 270.719 765.523V765.592Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M1586.72 720.894H1386.63L1361.41 639.598H1155.35L1387.63 1230.09H1586.23L1818.43 639.598H1612.37L1586.72 720.894ZM1546.01 851.728L1486.39 1043.61L1426.85 851.728H1546.01Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M2426.52 639.598V1230.09H2251.44L2029.18 930.824V1230.09H1832.14V639.598H2020.87L2242.84 921.586V639.598H2426.52Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M3111.27 934.946C3111.27 1108.92 2981.95 1230.09 2792.73 1230.09H2464.53V639.598H2792.73C2981.95 639.598 3111.27 760.905 3111.27 934.946ZM2779.3 1068.55C2844.96 1068.55 2915.73 1031.38 2915.73 934.946C2915.73 838.509 2844.67 801.128 2779.3 801.128H2656.38V1068.55H2779.3Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div className="footer-search">
+                  <input type="email" name="" id="" placeholder="Email" />
+                  <button className="animate__animated animate__fadeIn">
+                    Submit
+                  </button>
+                </div>
+
+                <div className="footer-nav">
+                  <div className="footer-nav-first-nav">
+                    <ul>
+                      <li>
+                        <a href="#" id="green">
+                          About
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" id="blue">
+                          Services
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" id="yellow">
+                          Careers
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" id="red">
+                          Hoox
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footer-nav-second-nav">
+                    <ul>
+                      <li>
+                        <a href="#" id="green">
+                          Work Portfoliio
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" id="blue">
+                          Case Studiio
+                        </a>
+                      </li> 
+
+                      <li>
+                        <a href="#" id="red">
+                          Panthers
+                        </a>
+                      </li> 
+                    </ul>
+                  </div>
+
+                  <div className="footer-nav-third-nav">
+                    <ul>
+                      <li>
+                        <a href="#" id="green">
+                          1180
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" id="blue">
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="fotter-mid-top-right">
+                  <div className="fotter-mid-center-right">
+                    <ul>
+                      <li>
+                        <a href="#" id="green">
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="blue">
+                          Work Portfolio
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="red">
+                          Services
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="yellow">
+                          Careers
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="fotter-mid-bottom-right">
+                    <ul>
+                      <li>
+                        <a href="#" id="blue">
+                          Hoox
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="red">
+                          Partners
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="yellow">
+                          Character
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="green">
+                          Case Studio
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" id="blue">
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="footer-df">
+              <div className="footer-center"></div>
+
+              <div className="fotter-show-social">
+                <h2 id="inta-left">Instagram</h2>
+                <h2 id="twitter-center">Twitter</h2>
+                <h2 id="link-right">Linkedin</h2>
+              </div>
+
+              <div className="footer-social">
+                <div className="footer-social-first">
+                  <h2>Instagram</h2>
+                </div>
+                <div className="footer-social-second">
+                  <h2>Twiitter</h2>
+                </div>
+                <div className="footer-social-third">
+                  <h2>Linkedin</h2>
+                </div>
+              </div>
+            </div>
+            <div className="footer-end">
+              <div className="footer-end-left">
+                <h2>SITE MADE BY THE HAPPIEST TEAM IN THE WORLD</h2>
+              </div>
+              <div className="footer-end-right">
+                <li id="terms-cond">TERMS AND CONDITIONS</li>
+                <li>PRIVACY POLICY</li>
+                <li>Acessibility</li>
+              </div>
+            </div>
+            <h1 id="hide-cur">
+              <span id="left">
+                curious? <br />
+              </span>
+              <div className="cur-df">
+                <span>
+                  <div id="curious-spin">
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.9084 0.506769C15.0209 -0.160141 15.9791 -0.160143 16.0916 0.506767L17.197 7.05849C17.2825 7.56515 17.9237 7.73698 18.2511 7.34094L22.4842 2.21966C22.9151 1.69836 23.745 2.17748 23.509 2.8113L21.1904 9.03794C21.0111 9.51946 21.4805 9.9889 21.9621 9.8096L28.1887 7.49101C28.8225 7.255 29.3016 8.08486 28.7803 8.51576L23.6591 12.7489C23.263 13.0763 23.4348 13.7175 23.9415 13.803L30.4932 14.9084C31.1601 15.0209 31.1601 15.9791 30.4932 16.0916L23.9415 17.197C23.4348 17.2825 23.263 17.9237 23.6591 18.2511L28.7803 22.4842C29.3016 22.9151 28.8225 23.745 28.1887 23.509L21.9621 21.1904C21.4805 21.0111 21.0111 21.4805 21.1904 21.9621L23.509 28.1887C23.745 28.8225 22.9151 29.3016 22.4842 28.7803L18.2511 23.6591C17.9237 23.263 17.2825 23.4348 17.197 23.9415L16.0916 30.4932C15.9791 31.1601 15.0209 31.1601 14.9084 30.4932L13.803 23.9415C13.7175 23.4348 13.0763 23.263 12.7489 23.6591L8.51576 28.7803C8.08486 29.3016 7.255 28.8225 7.49101 28.1887L9.8096 21.9621C9.9889 21.4805 9.51946 21.0111 9.03794 21.1904L2.8113 23.509C2.17748 23.745 1.69836 22.9151 2.21966 22.4842L7.34094 18.2511C7.73698 17.9237 7.56515 17.2825 7.05849 17.197L0.506769 16.0916C-0.160141 15.9791 -0.160143 15.0209 0.506767 14.9084L7.05849 13.803C7.56515 13.7175 7.73698 13.0763 7.34094 12.7489L2.21966 8.51576C1.69836 8.08486 2.17748 7.255 2.8113 7.49101L9.03794 9.8096C9.51946 9.9889 9.9889 9.51946 9.8096 9.03794L7.49101 2.8113C7.255 2.17748 8.08486 1.69836 8.51576 2.21966L12.7489 7.34094C13.0763 7.73698 13.7175 7.56515 13.803 7.05849L14.9084 0.506769Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                </span>
+                <span className="orange">let's talk </span>
+              </div>
+            </h1>
+            <p id="purple">explore your option</p> 
+            <div class="explore-div">
+              <hr class="explore" />
+            </div>
+          </div>
+        </div>
+      </footer> */}
       <footer className="curious">
         {/* <h1 id="hide-cur">
           <span id="left">
@@ -1121,11 +1443,11 @@ const Page = () => {
                         </a>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <a href="#" id="red">
                           Hoox
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
 
@@ -1137,17 +1459,17 @@ const Page = () => {
                         </a>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <a href="#" id="blue">
                           Case Studiio
                         </a>
-                      </li>
+                      </li> */}
 
-                      <li>
+                      {/* <li>
                         <a href="#" id="red">
                           Panthers
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
 
@@ -1251,12 +1573,13 @@ const Page = () => {
 
             <div className="footer-end">
               <div className="footer-end-left">
-                <h2>SITE MADE BY THE HAPPIEST TEAM IN THE WORLD</h2>
+                <h2>Tashe Transformer | ISO 9001:2008 certified company.</h2>
+                <h2 id="contact-no">Contact No.</h2>
               </div>
               <div className="footer-end-right">
                 <li id="terms-cond">TERMS AND CONDITIONS</li>
                 <li>PRIVACY POLICY</li>
-                <li>Acessibility</li>
+                {/* <li>Acessibility</li> */}
               </div>
             </div>
 

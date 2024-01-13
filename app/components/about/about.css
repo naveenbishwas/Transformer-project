@@ -36,11 +36,11 @@ body {
 
 .ellipse1 {
   border: 2px solid #8c6700;
-  width: 40vw;
-  height: 40vw;
+  width: 37vw;
+  height: 37vw;
   border-radius: 50%;
   position: absolute;
-  margin-top: 8%;
+  margin-top: 11%;
   margin-left: 20%;
   animation: ellipse1-trans 12s infinite alternate-reverse;
 }
@@ -78,11 +78,11 @@ body {
 
 .ellipse3 {
   border: 2px solid #8c6700;
-  width: 40vw;
-  height: 40vw;
+  width: 37vw;
+  height: 37vw;
   border-radius: 50%;
   position: absolute;
-  margin-top: 8%;
+  margin-top: 11%;
   margin-left: 20%;
   animation: ellipse1-trans3 16s infinite alternate-reverse;
 }
@@ -108,10 +108,9 @@ nav {
   justify-content: center;
 }
 
-nav h1 {
-  cursor: pointer;
-  margin-top: 1%;
-  font-size: 3rem;
+nav img {
+  width: 73px;
+  margin-top: 43%;
 }
 
 header nav svg {
@@ -121,6 +120,17 @@ header nav svg {
 .hi {
   color: orange;
   display: flex;
+}
+
+#red {
+  display: none;
+}
+
+.dit-guy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12%;
 }
 
 .dit-guy h1 {
@@ -141,13 +151,6 @@ header nav svg {
   margin-top: 1%;
   max-width: 45%;
   text-align: center;
-}
-
-.dit-guy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 18%;
 }
 
 .fixed-nav {
@@ -623,8 +626,25 @@ header nav svg {
   padding: 4% 0;
 }
 
+.quality-df {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quality-content {
+  max-width: 50%;
+}
+
+.process {
+  background-color: aliceblue;
+}
+
+.quality-img img {
+  width: 350px;
+}
+
 .quality-heading {
-  margin-top: 3%;
+  margin-top: 8%;
 }
 
 .quality-heading h1,
@@ -637,6 +657,16 @@ header nav svg {
   margin-top: 15px;
 }
 
+.testing-image img {
+  width: 250px;
+  /* height: 600px; */
+}
+
+.testing-dis-fl {
+  gap: 3%;
+  display: flex;
+}
+
 .testing-control {
   margin-top: 5%;
 }
@@ -646,8 +676,13 @@ header nav svg {
 }
 
 .testing-control ul {
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 2%;
+  max-width: 55%;
+}
+
+.testing-control ul > div {
+  margin-top: 2%;
 }
 
 .testing-dots {
@@ -661,6 +696,16 @@ header nav svg {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.certi-image img {
+  width: 220px;
+  margin-top: 1%;
+}
+
+.certi-image {
+  display: flex;
+  gap: 2%;
 }
 
 .company-text {
@@ -696,6 +741,7 @@ header nav svg {
   align-items: end;
   margin-left: 49%;
   margin-top: 7%;
+  margin-bottom: 9%;
 }
 
 .number2 {
@@ -891,9 +937,8 @@ header nav svg {
 
 .about-us-info {
   background: linear-gradient(45deg, #516a7e, #6cb4ee);
-
   color: #fff;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .about-us-info-text-heading {
