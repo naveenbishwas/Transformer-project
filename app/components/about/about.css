@@ -939,7 +939,7 @@ header nav svg {
 .about-us-info {
   background: linear-gradient(45deg, #4c84b1, #6cb4ee);
   color: #fff;
-  margin-top: 15%;
+  margin-top: 21%;
 }
 
 .about-us-info-text-heading {
@@ -951,7 +951,7 @@ header nav svg {
   font-size: 5rem;
   font-family: calibrib;
   text-align: center;
-  color: indigo;
+  color: #faf4ff;
 }
 
 .about-us-info-image img {
@@ -2551,6 +2551,15 @@ header nav svg {
 
   .number3 {
     margin-left: 0;
+    margin-bottom: 4%;
+  }
+
+  .company-values-intersect:last-child {
+    margin-bottom: 11%;
+  }
+
+  .cogguarted-tanks-info {
+    padding-top: 13%;
   }
 
   .number3 li {
@@ -2690,6 +2699,10 @@ header nav svg {
 
   .little-top {
     margin-top: 1%;
+  }
+
+  .about-more-content {
+    padding: 0 6% 15% 6%;
   }
 }
 

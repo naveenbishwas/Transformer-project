@@ -462,7 +462,7 @@ li.dis-no-in-big-screen {
     margin-left: 105%;
   }
   10% {
-    margin-left: 80%;
+    margin-left: 70%;
   }
   20% {
     margin-left: 55%;
@@ -2256,7 +2256,7 @@ li.dis-no-in-big-screen {
   font-family: "calibrib";
   font-size: 2rem;
   list-style: lower-roman;
-  color: #000000;
+  color: #ffffff;
   margin-top: 2%;
   list-style: disc;
   font-style: italic;
@@ -2315,11 +2315,6 @@ li.dis-no-in-big-screen {
 }
 
 @media screen and (max-width: 768px) {
-  nav svg {
-    width: 110px;
-    height: 110px;
-  }
-
   .header-heading h1 {
     margin-top: 38%;
     font-size: 22px;
@@ -2341,7 +2336,11 @@ li.dis-no-in-big-screen {
   }
 
   nav {
-    margin-top: 5%;
+    margin-top: -1%;
+  }
+
+  nav img {
+    width: 51px;
   }
 
   .header-advantage {
@@ -2380,9 +2379,10 @@ li.dis-no-in-big-screen {
   }
 
   .square-fl {
-    margin-top: 50%;
+    margin-top: 57%;
     margin-bottom: 26%;
     overflow: hidden;
+    padding: 7px 0px;
   }
 
   .relative:hover .hover {
@@ -2408,23 +2408,23 @@ li.dis-no-in-big-screen {
   }
 
   .ellipse1 {
-    border: 1px solid #000000;
-    width: 52vw;
+    order: 1px solid #000000;
+    width: 46vw;
     height: 50vh;
     border-radius: 50%;
     position: absolute;
     animation: ellipse1-trans 9s infinite linear;
-    margin-top: 32%;
+    margin-top: 30%;
   }
 
   .ellipse2 {
-    border: 1px solid #000000;
-    width: 52vw;
+    order: 1px solid #000000;
+    width: 46vw;
     height: 50vh;
     border-radius: 50%;
     position: absolute;
     animation: ellipse1-trans2 9s infinite linear;
-    margin-top: 32%;
+    margin-top: 30%;
   }
 
   .showing {
@@ -2440,7 +2440,7 @@ li.dis-no-in-big-screen {
   }
 
   .showing img {
-    width: 25px;
+    width: 20px;
     filter: brightness(0) invert(1);
   }
 
@@ -3391,7 +3391,7 @@ li.dis-no-in-big-screen {
   .we-made {
     padding: 11% 5%;
     background: aliceblue;
-    margin-top: 15%;
+    margin-top: -25%;
   }
 
   .tranfrom-made-paraone {
@@ -3414,6 +3414,13 @@ li.dis-no-in-big-screen {
 
   .tranfrom-made-paratwo {
     transform: translateY(15%);
+  }
+
+  .typeof-fins {
+    background: antiquewhite;
+    margin-bottom: 5%;
+    margin-top: 0;
+    padding-top: 16%;
   }
 }
 
@@ -3614,15 +3621,35 @@ li.dis-no-in-big-screen {
   }
 
   .header-heading h1 {
-    margin-top: 28%;
-    font-size: 28px;
+    margin-top: 33%;
+    font-size: 31px;
     max-width: 100%;
     margin-left: 2%;
   }
 
+  .square-fl {
+    margin-top: 39%;
+  }
+
   .hi {
     color: rgb(255, 160, 134);
-    font-size: 32px;
+    font-size: 37px;
+  }
+
+  .showing h1 {
+    text-wrap: wrap;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .showing img {
+    width: 28px;
+    filter: brightness(0) invert(1);
+  }
+  .fin-text {
+    font-size: 3rem;
   }
 
   .we-made-para p {
@@ -3643,6 +3670,10 @@ li.dis-no-in-big-screen {
     transform: translateX(24px);
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  nav img {
+    margin-top: 32%;
   }
 }
 
@@ -3709,5 +3740,6 @@ li.dis-no-in-big-screen {
 
   .banner-text-content-para-two ul li {
     margin-top: 7%;
+    color: #fff;
   }
 }

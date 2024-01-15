@@ -29,7 +29,7 @@ const HomePage = () => {
         </div>
         <nav>
           <a href="/components/homepage">
-            <img src="/svg icons/t.png" alt="" />
+            <img src={"/svg icons/t.png"} alt="" />
           </a>
         </nav>
 
@@ -469,7 +469,7 @@ const HomePage = () => {
       </section>
 
       <div className="spin-sun">
-        <img src="/svg icons/tank.png" alt="" />
+        <img src={"/svg icons/tank.png"} alt="" />
       </div>
 
       <section className="benefit-of-trash">
